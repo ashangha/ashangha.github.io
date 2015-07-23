@@ -1,0 +1,76 @@
+@import 'partials/project.css';
+
+.lightcolor {
+	color: $lightgrey;
+}
+
+.bluecolor {
+	color: $blue;
+}
+
+.content-wrapper {
+	width: 65%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.content {
+	animation: intro 1.5s ease-out 0.65s forwards;
+	margin: 2.5% auto;
+	opacity: 0;
+}
+
+.no-cssanimations .content {
+	opacity: 1;
+}
+
+.grid {
+	transition: opacity 0.5s ease-out, max-width 0.4s ease-out;
+	width: auto;
+	max-height: 25em;
+	vertical-align: middle;
+}
+
+.grid.selected {
+	max-width: 95%;
+	opacity: 1;
+}
+
+.grid.unselected {
+	max-width: 0;
+	opacity: 0;
+}
+
+.download {
+	transition: opacity 0.35s ease-out, transform 0.3s ease;
+	width: auto;
+	height: 2.75em;
+	margin: 7.5% 1% 0;
+	vertical-align: middle;
+}
+
+.no-touch .download:hover {
+	transform: translateY(-8px);
+}
+
+.no-touch .download:active {
+	transform: translateY(0);
+	opacity: 0.65;
+}
+
+
+/* Tablet */
+@media screen and (min-width: 35em) {
+	.content-wrapper {
+		width: 80%;
+	}
+}
+
+
+/* Desktop */
+@media screen and (min-width: 50em) {
+	.download {
+		height: 4.75em;
+		margin: 3.5% 2.5% 2.5%;
+	}
+}

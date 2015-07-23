@@ -1,0 +1,77 @@
+@import 'partials/project.css';
+
+.content {
+	animation: intro 1.25s ease-out 0.75s forwards;
+	margin: 5% auto;
+	opacity: 0;
+}
+
+.no-cssanimations .content {
+	opacity: 1;
+}
+
+.AllLinks {
+	text-align: center;
+}
+
+.Link {
+	display: inline;
+	margin: 0 0.4%;
+	line-height: 3.5em;
+	text-align: center;
+}
+
+.SocialIcon {
+	transition: opacity 0.25s ease-out, height 0.5s ease-out, width 0.5s ease-out, transform 0.25s ease-out;
+	transform: scale(0.8);
+	width: auto;
+	height: 4.5em;
+	margin-bottom: 2.5%;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.no-touch .SocialIcon:hover {
+	-webkit-transform: scale(1);
+	   -moz-transform: scale(1);
+	        transform: scale(1);
+}
+
+.no-touch .SocialIcon:active {
+	opacity: 0.5;
+}
+
+@import 'partials/share-sheet.css';
+
+
+/* Tablet */
+@media screen and (min-width: 35em) {
+	.content-wrapper {
+		width: 80%;
+	}
+}
+
+
+/* Desktop */
+@media screen and (min-width: 699px) {
+	.content {
+		margin: 2.5% auto;
+	}
+
+	.Link {
+		margin: 0 0.75%;
+		line-height: 3.5em;
+	}
+
+	.SocialIcon {
+		height: 3em;
+		margin: 0;
+	}
+}
+
+/* Large Screens */
+@media screen and (min-width: 68.5em) {
+	.SocialIcon {
+		height: 4.25em;
+	}
+}

@@ -1,1 +1,10 @@
-_site/
+config.codekit
+
+node_modules/
+bower_components/
+
+css/build/
+scripts/build/
+tea/tea.css.map
+**/*.html
+sitemap.xml
